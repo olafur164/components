@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "baseUrl": "./",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es5", "es6", "es7", "es2017", "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "removeComments": true,
+    "paths": {
+      "assets/*": ["./assets/*"],
+      "components/*": ["./src/components/*"],
+      "helpers/*": ["./src/helpers/*"],
+      "variables": ["./src/variables.js"],
+      "store": ["./src/store.ts"],
+      "interfaces": ["./src/interfaces.ts"],
+    },
+  },
+  "exclude": ["node_modules", "build", "scripts"],
+  "typeRoots": ["node_modules/@types"],
+}
