@@ -1,5 +1,5 @@
 import * as variables from 'variables';
-import React, { useRef, useEffect } from 'react';
+import * as React from 'react';
 import format from 'helpers/dateHelper';
 import FocusLock from 'react-focus-lock';
 import Icon from 'components/Icon';
@@ -60,10 +60,10 @@ const MegaMenuMainContentComponent: React.FC<IMegaMenuMainContentComponentProps>
   name,
   src,
 }) => {
-  const thisRef = useRef(null);
+  const thisRef = React.useRef(null);
   const mainContentTimeline = gsap.timeline();
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (thisRef && thisRef.current) {
       const children = [...thisRef.current.querySelectorAll('.megamenu_main_content_column')];
       if (children && children.length > 0) {

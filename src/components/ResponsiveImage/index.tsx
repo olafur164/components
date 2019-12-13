@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 const ResponsiveImage: React.FC<any> = ({}) => {
   return <div>Anchor</div>;

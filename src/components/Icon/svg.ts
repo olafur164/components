@@ -1,1 +1,1 @@
-import '../../assets/icons/sprite.svg';
+import 'assets/sprite.svg';
